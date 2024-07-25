@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack Simpson Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Jack Simpson</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Front-end Developer // UX Designer</p>
+          <h1>Hello, I'm <span>Jack</span> and based in the UK</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/JackSimpson.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am friendly, welcoming and approachable. Able to work in a busy
+              and demanding environments with various people from different
+              backgrounds. Professional and trustworthy with a conscientious
+              approach to work, paying close attention to detail and maintaining
+              high quality standards. I work well in a team and independently on
+              own initiative. Strong level of interpersonal skills and able to
+              work flexibly to adhere to company needs. Now looking for a
+              rewarding and challenging role within your company.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('tech')">Tech</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>Researching & Testing</li>
+                <li>Collaboration</li>
+                <li>Prototyping</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Active Learning</li>
+                <li>Planning & Structuring</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="tech">
+              <ul>
+                <li>Researching & Testing</li>
+                <li>Collaboration</li>
+                <li>Prototyping</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Active Learning</li>
+                <li>Planning & Structuring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function openTab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+      }
+    </script>
+    
+  </body>
+</html>
