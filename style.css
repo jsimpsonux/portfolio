@@ -139,3 +139,27 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* -------------------------projects--------------------------------------- */
+
+#services {
+    padding: 30px 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects img, div, p {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: auto;
+    text-decoration: none;
+}
+
+/* .project-list > div {
+    width: 50%;
+} */

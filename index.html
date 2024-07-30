@@ -34,20 +34,18 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              I am friendly, welcoming and approachable. Able to work in a busy
-              and demanding environments with various people from different
-              backgrounds. Professional and trustworthy with a conscientious
-              approach to work, paying close attention to detail and maintaining
-              high quality standards. I work well in a team and independently on
-              own initiative. Strong level of interpersonal skills and able to
-              work flexibly to adhere to company needs. Now looking for a
-              rewarding and challenging role within your company.
+              I'm a passionate junior front-end developer with a relentless
+              thirst for knowledge and love building user-friendly websites.
+              <br/>When I'm not learning about new things, you'll find me with my
+              nose buried in a history book or one of my go-to history YouTube
+              channels,<br/> drawing inspiration from the past to shape the future.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
+              <p class="tab-links active-link" onclick="openTab('skills')">
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('tech')">Tech</p>
+              <p class="tab-links" onclick="openTab('tech')">Tech</p>
+              <p class="tab-links" onclick="openTab('Hobbies')">Hobbies</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -62,21 +60,41 @@
             </div>
             <div class="tab-contents" id="tech">
               <ul>
-                <li>Researching & Testing</li>
-                <li>Collaboration</li>
-                <li>Prototyping</li>
-                <li>Communication</li>
-                <li>Problem Solving</li>
-                <li>Active Learning</li>
-                <li>Planning & Structuring</li>
+                <li>React</li>
+                <li>HTML & CSS</li>
+                <li>Git</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>API</li>
               </ul>
             </div>
+            <div class="tab-contents" id="Hobbies">
+                <ul>
+                  <li>Reading about history</li>
+                  <li>Watching documentaries</li>
+                  <li>Learning how to build something cool</li>
+                  <li>Playing strategies games</li>
+                  <li>Attempting to water my plant</li>
+                </ul>
+              </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects" id="project-list">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <!-- <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -87,8 +105,9 @@
         for (tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
       }
-    </script>
-    
+    </script> -->
   </body>
 </html>
