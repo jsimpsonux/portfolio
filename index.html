@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jack Simpson Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <h1>Jack Simpson</h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>Front-end Developer // UX Designer</p>
-          <h1>Hello, I'm <span>Jack</span> and based in the UK</h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Simpson Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1>Jack Simpson</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/jack-simpsonux/">
+              <i class="devicon-- colored"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Developer // UX Designer</p>
+        <h1>Hello, I'm <span>Jack</span> and based in the UK</h1>
       </div>
     </div>
+    <h2>Take a look</h2>
+  </div>
 
-    <!--About-->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/JackSimpson.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              I'm a passionate junior front-end developer with a relentless
-              thirst for knowledge and love building user-friendly websites.
-              <br/>When I'm not learning about new things, you'll find me with my
-              nose buried in a history book or one of my go-to history YouTube
-              channels,<br/> drawing inspiration from the past to shape the future.
+  <!--About-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/JackSimpson.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I'm a passionate junior front-end developer with a relentless
+            thirst for knowledge and love building user-friendly websites.
+            When I'm not learning about new things, you'll find me with
+            my nose buried in a history book or one of my go-to history
+            YouTube channels,drawing inspiration from the past to shape the
+            future.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
             </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="openTab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="openTab('tech')">Tech</p>
-              <p class="tab-links" onclick="openTab('Hobbies')">Hobbies</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>Researching & Testing</li>
-                <li>Collaboration</li>
-                <li>Prototyping</li>
-                <li>Communication</li>
-                <li>Problem Solving</li>
-                <li>Active Learning</li>
-                <li>Planning & Structuring</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="tech">
-              <ul>
-                <li>React</li>
-                <li>HTML & CSS</li>
-                <li>Git</li>
-                <li>jQuery</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>API</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="Hobbies">
-                <ul>
-                  <li>Reading about history</li>
-                  <li>Watching documentaries</li>
-                  <li>Learning how to build something cool</li>
-                  <li>Playing strategies games</li>
-                  <li>Attempting to water my plant</li>
-                </ul>
-              </div>
+            <p class="tab-links" onclick="openTab('tech')">Tech</p>
+            <p class="tab-links" onclick="openTab('Hobbies')">Hobbies</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>Researching & Testing</li>
+              <li>Collaboration</li>
+              <li>Prototyping</li>
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Active Learning</li>
+              <li>Planning & Structuring</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="tech">
+            <ul>
+              <li>React</li>
+              <li>HTML & CSS</li>
+              <li>Git</li>
+              <li>jQuery</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>API</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Hobbies">
+            <ul>
+              <li>Reading about history</li>
+              <li>Watching documentaries</li>
+              <li>Learning how to build something cool</li>
+              <li>Playing strategies games</li>
+              <li>Attempting to water my plant</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="projects" id="project-list">
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="projects" id="project-list"></div>
+  </div>
+
+  <div id="pipeline">
+    <div class="container">
+
     </div>
+  </div>
 
+  <script src="script.js"></script>
 
-    <script src="script.js"></script>
-
-    <!-- <script>
+  <!-- <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -109,5 +121,6 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script> -->
-  </body>
+</body>
+
 </html>

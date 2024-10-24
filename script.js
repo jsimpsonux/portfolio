@@ -47,19 +47,19 @@ function Projects(data) {
 
   data.forEach(data =>{
     const projectDiv = document.createElement('div');
+    projectDiv.classList.add("projectitem");
 
     projectDiv.innerHTML = `
     <h1>${data.title}</h1>
     <img src="${data.image}">
     <p>${data.description}</p>
-    <p><a href="${data.github}">Github Repository</p>
-    <p><a href="${data.link}">Link</p>
+    <p><a href="${data.github}">Github Repository</a></p>
+    <p><a href="${data.link}">Link</a></p>
     `;
 
     projectList.appendChild(projectDiv);
   });
     
-
 }
 
 Projects(data);
