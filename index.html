@@ -7,6 +7,10 @@
   <title>Jack Simpson Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -27,10 +31,9 @@
       </nav>
       <div class="header-text">
         <p>Front-end Developer // UX Designer</p>
-        <h1>Hello, I'm <span>Jack</span> and based in the UK</h1>
+        <h1>Hello, I'm <span class="fadeIn">Jack</span> and based in the UK</h1>
       </div>
     </div>
-    <h2>Take a look</h2>
   </div>
 
   <!--About-->
@@ -43,7 +46,7 @@
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>
-            I'm a passionate junior front-end developer with a relentless
+            I'm a passionate front-end developer with a relentless
             thirst for knowledge and love building user-friendly websites.
             When I'm not learning about new things, you'll find me with
             my nose buried in a history book or one of my go-to history
@@ -83,7 +86,7 @@
             <ul>
               <li>Reading about history</li>
               <li>Watching documentaries</li>
-              <li>Learning how to build something cool</li>
+              <li>Learning how to build something cool things</li>
               <li>Playing strategies games</li>
               <li>Attempting to water my plant</li>
             </ul>
@@ -100,27 +103,18 @@
 
   <div id="pipeline">
     <div class="container">
-
+      <h1>What's in the Pipeline?</h1>
+      <ul>
+        <li><h2>Passive: Learning Next.js</h2></li>
+        <li><h2>Building product catalog with a third-party checkout</h2></li>
+        <li><h2>Passive: UI component library</h2></li>
+        <li><h2>More to come</h2></li>
+      </ul>
     </div>
   </div>
 
   <script src="script.js"></script>
-
-  <!-- <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function openTab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script> -->
+  
 </body>
 
 </html>
