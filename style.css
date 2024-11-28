@@ -270,8 +270,16 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 700px) {
+  #about .container .row .about-col-1 img {
+    width: 300px;
+    height: auto;
+  }
   .container > #project-list {
     flex-direction: column;
+  }
+
+  .container #project-list h1, .sub-title{
+    font-size: 1.5rem;
   }
 
   .container > #project-list > .projectitem > img {
@@ -317,17 +325,28 @@ nav ul li a:hover::after {
     font-size: xx-large;
   }
 
+  #pipeline .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
   #pipeline .container ul li {
-    font-size: small;
+    padding: 10px;
+    font-size: 0.6rem !important;
+    
   }
 
   #pipeline .container h1 {
-    font-size: small;
+    font-size: 1.5rem;
   }
 
   #pipeline .container {
-    padding: 50px;
+    padding: 40px !important;
   }
+
 }
 
 
